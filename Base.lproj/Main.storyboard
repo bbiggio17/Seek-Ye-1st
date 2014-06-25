@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="l1I-oz-ev7">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="hCl-4q-JGi">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="l1I-oz-ev7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S7m-8a-YqW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="rvD-6a-oon"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v9n-Fy-TVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508" y="-350"/>
+        </scene>
+        <!--Seek Ye First View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SeekYeFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Epr-fu-M9c"/>
+                        <viewControllerLayoutGuide type="bottom" id="ua1-K9-y2e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Seek Ye 1st" translatesAutoresizingMaskIntoConstraints="NO" id="MK0-It-lzZ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6n-lU-J2W">
+                                <rect key="frame" x="21" y="377" width="87" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Self-Assessment" image="Self-Assessment Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UDb-WV-EHa" kind="push" identifier="segueToSelfAssessment" id="azn-T5-rGf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z9m-7T-fbN">
+                                <rect key="frame" x="118" y="377" width="87" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="COPE Button"/>
+                                <connections>
+                                    <segue destination="dMB-bS-Boi" kind="push" identifier="segueToCope" id="gwn-cH-4ry"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIr-cn-dd2">
+                                <rect key="frame" x="213" y="379" width="87" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="Devotion Button"/>
+                                <connections>
+                                    <segue destination="8H6-oV-otg" kind="push" identifier="segueToDevotion" id="AeG-81-Rvn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KIg-vC-k26"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="-342"/>
+        </scene>
+        <!--View Controller - C.O.P.E.-->
+        <scene sceneID="Vx3-q1-0l3">
+            <objects>
+                <viewController id="dMB-bS-Boi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2wv-Vb-PTs"/>
+                        <viewControllerLayoutGuide type="bottom" id="UuU-aE-9x8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ejw-iw-GDT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="How Do You COPE with Stress Image" translatesAutoresizingMaskIntoConstraints="NO" id="Y0g-dr-Wco">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="C.O.P.E." id="HM2-tT-zRf">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="i1Z-zE-1o2">
+                            <connections>
+                                <segue destination="w5q-ap-lw8" kind="push" identifier="PlaceholderSegue" id="0Ct-Ax-Rh2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="w5q-ap-lw8" kind="push" identifier="automaticSegue" id="RcJ-mm-mFe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQR-Gs-1y6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="-1601"/>
+        </scene>
+        <!--Cope Menu View Controller - Menu-->
+        <scene sceneID="k9T-0g-YlL">
+            <objects>
+                <viewController storyboardIdentifier="copeMenu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w5q-ap-lw8" customClass="CopeMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UhJ-MI-f4i"/>
+                        <viewControllerLayoutGuide type="bottom" id="7oF-30-KTk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hrZ-av-JDf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="COPE Menu Page" translatesAutoresizingMaskIntoConstraints="NO" id="RCr-fG-vQU">
+                                <rect key="frame" x="0.0" y="65" width="292" height="415"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYp-Na-4Zs">
+                                <rect key="frame" x="108" y="248" width="102" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MBW-o6-ahg" kind="push" identifier="ChristianFaithSegue" id="FLi-QG-Jim"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgh-N3-zbp">
+                                <rect key="frame" x="108" y="301" width="102" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="VY8-dO-Us6" kind="push" identifier="OpportunitySegue" id="pED-rR-04D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWE-hb-C3e">
+                                <rect key="frame" x="108" y="356" width="102" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Sn2-ue-kZS" kind="push" identifier="PhysicalSegue" id="aUO-M0-hfe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cq-7H-fFC">
+                                <rect key="frame" x="108" y="414" width="102" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ahv-JY-3XZ" kind="push" identifier="EmotionalSegue" id="zod-WL-eJW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Menu" id="cfk-5U-4i1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3C-kQ-Itk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-1601"/>
+        </scene>
+        <!--View Controller - Christian Faith-->
+        <scene sceneID="f26-jU-H3T">
+            <objects>
+                <viewController id="MBW-o6-ahg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kEY-SZ-VFh"/>
+                        <viewControllerLayoutGuide type="bottom" id="aIs-HR-Fei"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fie-QM-Tzy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="COPE Button-1" translatesAutoresizingMaskIntoConstraints="NO" id="pnw-MQ-R9j">
+                                <rect key="frame" x="0.0" y="100" width="158" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Your Spiritual Needs Assessment Button" translatesAutoresizingMaskIntoConstraints="NO" id="pU9-Mf-xrw">
+                                <rect key="frame" x="162" y="100" width="158" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGu-wi-qPi">
+                                <rect key="frame" x="20" y="244" width="280" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">CHRISTIAN FAITH can be used towards fighting temptations, in cultivating virtues, connecting with our spiritual self and an avenue in searching for God’s direction.  It is advantages to seek help of others as needed (i.e. qualified lay minister or religious leader in your community of faith).</string>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0V-bC-Im3">
+                                <rect key="frame" x="20" y="430" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="12 Steps">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CZU-eP-fIO" kind="push" identifier="12stepsSegue" id="Lzx-5T-JL0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T41-m7-pFq">
+                                <rect key="frame" x="176" y="430" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Self-Care Saturday">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gAz-ne-fK2" kind="push" identifier="SegueFromChristianFaithToSelfCareSaturday" id="Oox-Hf-krb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Christian Faith" id="I73-z8-Nws">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="cUT-Gr-bNL">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="push" identifier="SegueToHomeFromChristianFaith" id="whu-W7-AGY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uhe-Ig-Ct7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="-2654"/>
+        </scene>
+        <!--View Controller - 12 Steps to Self-Care-->
+        <scene sceneID="iSS-4F-KZd">
+            <objects>
+                <viewController id="CZU-eP-fIO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l8R-Ui-CG1"/>
+                        <viewControllerLayoutGuide type="bottom" id="CtR-E7-25J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EI2-8n-NVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="12 Steps to Self-Care" translatesAutoresizingMaskIntoConstraints="NO" id="DxY-Yq-ygQ">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="12 Steps to Self-Care" id="kh8-Jj-gmT">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="U8o-bo-poH">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="push" identifier="SegueToHomeFrom12Steps" id="dMJ-VY-Ghp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NmF-bt-5ZX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="-2084"/>
+        </scene>
+        <!--Self Assessment View Controller - Self-Assessment-->
+        <scene sceneID="ecR-wc-j3k">
+            <objects>
+                <viewController id="UDb-WV-EHa" customClass="SelfAssessmentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dzE-zy-eME"/>
+                        <viewControllerLayoutGuide type="bottom" id="abX-dc-Hat"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9ym-Wx-H6f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="FinalSelfAssessementScene" translatesAutoresizingMaskIntoConstraints="NO" id="XcJ-WP-eb8">
+                                <rect key="frame" x="-10" y="65" width="340" height="421"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXa-Vd-cTV">
+                                <rect key="frame" x="105" y="238" width="122" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1b-3J-kJN">
+                                <rect key="frame" x="87" y="248" width="150" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="neQ-r0-TZK" kind="push" identifier="Emotional" id="Wah-yr-Zyx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Df-7W-siB">
+                                <rect key="frame" x="6" y="327" width="105" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="neQ-r0-TZK" kind="push" identifier="Psychological" id="AgN-ND-VRc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghc-zp-Enu">
+                                <rect key="frame" x="119" y="415" width="118" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="neQ-r0-TZK" kind="push" identifier="Spiritual" id="VW8-LP-Opr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8o-9r-BhH">
+                                <rect key="frame" x="213" y="361" width="100" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="neQ-r0-TZK" kind="push" identifier="Professional" id="T3l-R4-FEy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KwD-wy-144">
+                                <rect key="frame" x="230" y="254" width="100" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="neQ-r0-TZK" kind="push" identifier="Physical" id="cQD-nx-EUC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Self-Assessment" id="ktC-nv-gYU"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w5b-WS-x3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="-342"/>
+        </scene>
+        <!--Devotion View Controller - Devotion-->
+        <scene sceneID="0Ih-Dg-jSf">
+            <objects>
+                <viewController id="8H6-oV-otg" customClass="DevotionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3UA-ez-pWq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fqj-FR-HEK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zcd-I1-5Mo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Devotion Page4s" translatesAutoresizingMaskIntoConstraints="NO" id="p2L-gc-UHh">
+                                <rect key="frame" x="0.0" y="64" width="320" height="545"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="contentStretch" x="0.0" y="0.25" width="1" height="1"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOt-n7-h1B">
+                                <rect key="frame" x="20" y="117" width="78" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qz4-HD-bD5" kind="push" identifier="http://www.vatican.va/archive/ENG0839/_INDEX.HTM" id="6kb-Us-Zbc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwV-3E-UGx">
+                                <rect key="frame" x="222" y="365" width="89" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qz4-HD-bD5" kind="push" identifier="http://pray-as-you-go.org/index.php?id=129" id="54l-0b-e1u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2f-RP-dBt">
+                                <rect key="frame" x="8" y="258" width="124" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qz4-HD-bD5" kind="push" identifier="http://www.vatican.va/archive/ENG0015/_INDEX.HTM" id="Z7Q-M7-kn9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxN-E5-7FC">
+                                <rect key="frame" x="106" y="81" width="108" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qz4-HD-bD5" kind="push" identifier="http://www.pray-as-you-go.org/home/" id="9f1-7v-3T4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uga-jB-7NE">
+                                <rect key="frame" x="195" y="253" width="105" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Guz-tL-a8M" kind="push" identifier="5 Finger Segue" id="76H-p2-SFC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYr-X8-yBF">
+                                <rect key="frame" x="222" y="117" width="67" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qz4-HD-bD5" kind="push" identifier="http://pray-as-you-go.org/index.php?id=132" id="Vsq-f3-O8n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Devotion" id="kvx-9L-GNC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmW-cy-CT8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="798"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xgw-6t-vwt">
+            <objects>
+                <viewController id="Guz-tL-a8M" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q9D-7s-LO6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wec-dc-a7M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="teS-a9-Eh7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="dWn-5g-Mbv">
+                                <rect key="frame" x="141" y="222" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5 Finger Prayer" translatesAutoresizingMaskIntoConstraints="NO" id="w69-OX-XiV">
+                                <rect key="frame" x="-2" y="66" width="325" height="414"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LgQ-Hu-TkC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elq-w8-1Ea" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="1038"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="zs9-Oa-IWp">
+            <objects>
+                <viewController id="Qz4-HD-bD5" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jo8-Gy-g4d"/>
+                        <viewControllerLayoutGuide type="bottom" id="RNz-uy-U6A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cdk-ij-b8R">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XAV-oa-2KO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jlK-gT-JUE" userLabel="Gray Activity Indicator">
+                                <rect key="frame" x="150" y="230" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CBX-Ms-9Bw"/>
+                    <connections>
+                        <outlet property="spinner" destination="jlK-gT-JUE" id="qnR-7A-znV"/>
+                        <outlet property="viewWeb" destination="XAV-oa-2KO" id="jnW-2M-XBx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5i-Gc-Mfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195" y="304"/>
+        </scene>
+        <!--Assessment Table View Controller-->
+        <scene sceneID="s52-S2-CZm">
+            <objects>
+                <tableViewController id="neQ-r0-TZK" customClass="AssessmentTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" sectionHeaderHeight="22" sectionFooterHeight="22" id="v6a-er-gD0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="section2Cell" id="Wgp-lr-KBt" customClass="MyTableViewCell">
+                                <rect key="frame" x="0.0" y="86" width="320" height="115"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wgp-lr-KBt" id="3NT-sW-ufZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" restorationIdentifier="question" text="Label" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcR-Ni-zHX">
+                                            <rect key="frame" x="20" y="11" width="280" height="28"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="tag">
+                                                    <integer key="value" value="0"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <segmentedControl opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="etC-ML-9zi">
+                                            <rect key="frame" x="20" y="47" width="249" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="28" id="n1k-Fm-I5a"/>
+                                            </constraints>
+                                            <segments>
+                                                <segment title="1"/>
+                                                <segment title="2"/>
+                                                <segment title="3"/>
+                                                <segment title="4"/>
+                                                <segment title="5"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="responseValueDidChange:" destination="neQ-r0-TZK" eventType="valueChanged" id="nEK-Fq-ldY"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="etC-ML-9zi" secondAttribute="trailing" constant="51" id="5Ge-Lg-cLj"/>
+                                        <constraint firstAttribute="bottom" secondItem="etC-ML-9zi" secondAttribute="bottom" constant="9" id="6Mm-3U-rKq"/>
+                                        <constraint firstItem="bcR-Ni-zHX" firstAttribute="top" secondItem="3NT-sW-ufZ" secondAttribute="top" constant="11" id="GWI-0p-Gp1"/>
+                                        <constraint firstAttribute="trailing" secondItem="bcR-Ni-zHX" secondAttribute="trailing" constant="20" symbolic="YES" id="JLJ-hs-OsP"/>
+                                        <constraint firstItem="etC-ML-9zi" firstAttribute="top" secondItem="bcR-Ni-zHX" secondAttribute="bottom" constant="8" symbolic="YES" id="Nc4-ag-LYd"/>
+                                        <constraint firstItem="bcR-Ni-zHX" firstAttribute="leading" secondItem="3NT-sW-ufZ" secondAttribute="leading" constant="20" symbolic="YES" id="boq-ve-jr8"/>
+                                        <constraint firstItem="etC-ML-9zi" firstAttribute="leading" secondItem="bcR-Ni-zHX" secondAttribute="leading" id="foY-xK-Acj"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="surveyResponseControl" destination="etC-ML-9zi" id="JhA-kM-w7d"/>
+                                    <outlet property="surveyText" destination="bcR-Ni-zHX" id="h0y-Fh-XUB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="neQ-r0-TZK" id="VHr-f5-lgv"/>
+                            <outlet property="delegate" destination="neQ-r0-TZK" id="yAB-Iw-d4D"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="DRl-Wu-hdf">
+                        <barButtonItem key="rightBarButtonItem" title="Directions" id="Gts-O9-slo">
+                            <connections>
+                                <action selector="showInstructionsAlert:" destination="neQ-r0-TZK" id="gig-GF-jId"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y18-QJ-fV1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923" y="-342"/>
+        </scene>
+        <!--View Controller - Opportunity -->
+        <scene sceneID="8Dg-ch-xbg">
+            <objects>
+                <viewController id="VY8-dO-Us6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CyK-Qh-nXI"/>
+                        <viewControllerLayoutGuide type="bottom" id="N6p-jZ-CYo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Rx-dg-pwV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="COPE Button-1" translatesAutoresizingMaskIntoConstraints="NO" id="5Wb-oP-b79">
+                                <rect key="frame" x="0.0" y="100" width="158" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Behavioral Modification Button" translatesAutoresizingMaskIntoConstraints="NO" id="vMf-sv-cuY">
+                                <rect key="frame" x="162" y="100" width="158" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPL-jc-m4J">
+                                <rect key="frame" x="20" y="244" width="280" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Opportunity in changing our behavior is contingent upon our uncomfortability.  Needed changes can be done upon seeking out psychological healing which may help with our mental stability and peacefulness.</string>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3m-cN-FAT">
+                                <rect key="frame" x="20" y="430" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="12 Steps">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CZU-eP-fIO" kind="push" identifier="12StepsFromOpportunity" id="g8V-5F-AoV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R3-Wx-NG7">
+                                <rect key="frame" x="176" y="430" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Self-Care Saturday">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gAz-ne-fK2" kind="push" identifier="SegueFromOpportunityToSelfCareSaturday" id="h6q-xA-M1z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Opportunity " id="cuH-pk-3YE">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="rQH-P0-h10">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="push" identifier="SegueToHomeFromOpportunity" id="s7C-Xa-AZQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H5l-D9-tpI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="-2084"/>
+        </scene>
+        <!--View Controller - Phyiscal -->
+        <scene sceneID="Keg-wG-Ny2">
+            <objects>
+                <viewController id="Sn2-ue-kZS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rdl-qR-MjG"/>
+                        <viewControllerLayoutGuide type="bottom" id="avS-r9-bMp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pmO-yj-Grn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="COPE Button-1" translatesAutoresizingMaskIntoConstraints="NO" id="hfG-XZ-etv">
+                                <rect key="frame" x="0.0" y="100" width="158" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Self Care Button" translatesAutoresizingMaskIntoConstraints="NO" id="8Nh-Nb-29f">
+                                <rect key="frame" x="162" y="100" width="158" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edJ-Xt-HZn">
+                                <rect key="frame" x="20" y="244" width="280" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Physical self-care is all-inclusive with exercise, adequate sleep, a wholesome diet and sufficient relaxation.
+</string>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFX-Rp-QqA">
+                                <rect key="frame" x="20" y="430" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="12 Steps">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CZU-eP-fIO" kind="push" identifier="12StepsFromPhysical" id="uFq-3X-Eea"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ass-19-2Xa">
+                                <rect key="frame" x="176" y="430" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Self-Care Saturday">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gAz-ne-fK2" kind="push" identifier="SegueFromPhysicalToSelfCareSaturday" id="IeW-ca-eUr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Phyiscal " id="eZg-Tt-lId">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="W5J-J6-AdS"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUy-1T-KoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="-1514"/>
+        </scene>
+        <!--View Controller - Emotional-->
+        <scene sceneID="rSf-JC-9dO">
+            <objects>
+                <viewController id="ahv-JY-3XZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZyF-ya-B98"/>
+                        <viewControllerLayoutGuide type="bottom" id="q6g-0w-9gf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m5Y-vk-MiA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="COPE Button-1" translatesAutoresizingMaskIntoConstraints="NO" id="9ZQ-Jr-fSH">
+                                <rect key="frame" x="0.0" y="100" width="158" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Feelings Button" translatesAutoresizingMaskIntoConstraints="NO" id="GKG-xT-4kO">
+                                <rect key="frame" x="162" y="100" width="158" height="136"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdb-zE-szb">
+                                <rect key="frame" x="20" y="244" width="280" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Emotional stress results in negative emotions which can easily manifest itself into unhealthy feelings.  Such will require finding the source of the emotional turmoil in order to overcome the side effects.
+</string>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMz-wz-dDW">
+                                <rect key="frame" x="20" y="430" width="61" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="12 Steps">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="CZU-eP-fIO" kind="push" identifier="12StepsFromEmotional" id="FSQ-fK-g0J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z5G-HK-czN">
+                                <rect key="frame" x="176" y="430" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Self-Care Saturday">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gAz-ne-fK2" kind="push" identifier="SegueFromEmotionalToSelfCareSaturday" id="N5K-Y5-OR8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Emotional" id="szL-IH-ST8">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="jL5-Ce-CvY">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="push" identifier="SegueToHomeFromEmotional" id="hfa-Nn-zM6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MBJ-QW-Su5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1525" y="-948"/>
+        </scene>
+        <!--View Controller - SelfCareSaturday-->
+        <scene sceneID="akg-z1-MUa">
+            <objects>
+                <viewController title="SelfCareSaturday" id="gAz-ne-fK2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sFc-TK-xnN"/>
+                        <viewControllerLayoutGuide type="bottom" id="72l-xT-7D3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RXW-OV-y7l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Self Care Saturday Slide-Cropped" translatesAutoresizingMaskIntoConstraints="NO" id="BpN-10-UPA">
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="12 Steps to Self-Care" id="J8S-CX-7e6">
+                        <barButtonItem key="rightBarButtonItem" title="Home" id="eDC-L5-A07">
+                            <connections>
+                                <segue destination="vXZ-lx-hvc" kind="push" identifier="SegueFromSelfCareSaturdayToSeekYeFirst" id="ACi-d2-BAA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHT-Hx-lov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="-1514"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="12 Steps to Self-Care" width="319" height="480"/>
+        <image name="5 Finger Prayer" width="480" height="480"/>
+        <image name="Behavioral Modification Button" width="359" height="409"/>
+        <image name="COPE Button" width="268" height="227"/>
+        <image name="COPE Button-1" width="293" height="261"/>
+        <image name="COPE Menu Page" width="500" height="702"/>
+        <image name="Devotion Button" width="269" height="227"/>
+        <image name="Devotion Page4s" width="316" height="480"/>
+        <image name="Feelings Button" width="359" height="409"/>
+        <image name="FinalSelfAssessementScene" width="601" height="952"/>
+        <image name="How Do You COPE with Stress Image" width="644" height="960"/>
+        <image name="Seek Ye 1st" width="320" height="480"/>
+        <image name="Self Care Button" width="359" height="409"/>
+        <image name="Self Care Saturday Slide-Cropped" width="320" height="480"/>
+        <image name="Self-Assessment Button" width="269" height="227"/>
+        <image name="Your Spiritual Needs Assessment Button" width="179" height="204"/>
+    </resources>
+    <color key="tintColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="0Ct-Ax-Rh2"/>
+        <segue reference="ACi-d2-BAA"/>
+        <segue reference="IeW-ca-eUr"/>
+        <segue reference="uFq-3X-Eea"/>
+        <segue reference="Wah-yr-Zyx"/>
+        <segue reference="9f1-7v-3T4"/>
+    </inferredMetricsTieBreakers>
+</document>
